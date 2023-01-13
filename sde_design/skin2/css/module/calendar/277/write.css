@@ -1,0 +1,14 @@
+#popup { width:600px; }
+.header h1 { height:45px; padding:0 0 0 20px; color:#fff; font-size:14px; line-height:45px; background-color:#495164; }
+.content { padding:20px; min-height:270px; }
+.btnArea { position:fixed; bottom:0; left:0; width:100%; padding:10px 0; border-top:1px solid #d7d5d5; text-align:center; background-color:#fbfafa; }
+
+.xans-calendar-write table { table-layout:fixed; border:1px solid #d7d5d5; line-height:180%; }
+.xans-calendar-write th { width:110px; padding:10px 0 8px 20px; border-top:1px solid #e8e8e8; border-right:1px solid #e8e8e8; background-color:#fbfafa; text-align:left; font-weight:normal; vertical-align:middle; }
+.xans-calendar-write td { width:auto; padding:10px 0 8px 10px; border-top:1px solid #e8e8e8; }
+.xans-calendar-write tr.first th,
+.xans-calendar-write tr.first td { border-top:0; }
+.xans-calendar-write td input,
+.xans-calendar-write td textarea { padding:2px 2px 2px 4px; width:350px; height:18px; color:#202020; border:1px solid #d9d9d9; }
+.xans-calendar-write td input#date { width:70px; text-align:center; }
+.xans-calendar-write td textarea { height:80px; }

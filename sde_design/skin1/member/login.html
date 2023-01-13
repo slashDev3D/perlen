@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="//www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
+<!--@css(/layout/basic/css/ec-base-product.css)-->
+<!--@css(/layout/basic/css/ec-base-paginate.css)-->
+<!--@css(/layout/basic/css/ec-base-ui.css)-->
+<!--@css(/layout/basic/css/ec-base-help.css)-->
+<!--@css(/layout/basic/css/ec-base-button.css)-->
+<!--@css(/layout/basic/css/ec-base-box.css)-->
+<!--@css(/layout/basic/css/ec-base-layer.css)-->
+<!--@css(/layout/basic/css/ec-base-table.css)-->
+<!--@css(/layout/basic/css/ec-base-fold.css)-->
+<!--@css(/layout/basic/css/ec-base-prdInfo.css)-->
+<!--@css(/layout/basic/css/ec-base-tooltip.css)-->
+
+<!--@css(/gridsystem/resource/css/vendor.css)-->
+<!--@css(/gridsystem/resource/css/common.css)-->
+<!--@css(/gridsystem/resource/css/layout.css)-->
+<!--@css(/gridsystem/resource/css/font/font.css)-->
+
+<!-- 스마트디자인에서는 JQuery 1.4.4 버전이 내장되어있습니다. 추가로 호출하면 충돌이 생길 수 있습니다. -->
+<!--@js(/gridsystem/resource/js/jquery.plugin.js)-->
+<!--@js(/gridsystem/resource/js/common.js)-->
+<!--@css(/member/login.css)-->
+</head>
+<body id="main" class="dnd">
+    <div id="wrap">
+        <div id="container" class="gridContainer" style="display: grid;grid-template-columns: repeat(4,1fr);min-height: 0;min-width: 0;">
+<div class="gridItem" data-component-id="1077" id="grid_id_1575274363160_2" style="grid-area: 1 / 1 / 3 / 5;min-width: 0;">
+    <div class="dnd_module_272c65f7b0b04681b7a6c1172d9d2d53">
+<!-- MOMA COMPONENT ID 1077 : F_공통_GNB -->
+<aside id="aside" module="layout_slide" class="slidingMenu">
+    <!--@import(/layout/sidebar.html)-->
+    <button type="button" class="btnClose">닫기</button>
+</aside>
+<header id="header">
+    <div class="header">
+        <h1 module="Layout_LogoTop">
+            <a href="/index.html"><img src="{$logo}" alt="{$mall_name}" data-width="200px" data-height="30px" /></a>
+        </h1>
+        <div class="headerMenu gLeft">
+            <span module="layout_slide" class="hidden"></span>
+            <button type="button" class="btnCate">카테고리</button>
+        </div>
+        <div class="headerMenu gRight">
+            <span module="Layout_orderBasketcount" class="btnBasket">
+                <a href="/order/basket.html">장바구니<span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a>
+            </span>
+        </div>
+    </div>
+</header>
+<!-- //MOMA COMPONENT ID 1077 : F_공통_GNB -->
+</div>
+</div>
+<div class="gridItem" data-component-id="50" id="grid_id_1587452195954_2" style="grid-area: 3 / 1 / 13 / 5;min-width: 0;">
+    <div class="dnd_module_403fc44481ecc8740bce862728fdc832">
+<!-- MOMA COMPONENT ID 50 : BS_로그인_로그인_v01 -->
+<div class="titleArea">
+    <h2 class="title">로그인</h2>
+</div>
+<div module="member_login" id="{$member_login_module_id}" class="memberLogin">
+    <!--
+        $defaultReturnUrl = /index.html
+    -->
+    <!--주문조회-->
+    <div class="loginArea">
+        <div class="memberTab {$member_login_tab_display|display}">
+            <ul class="tab">
+                <li class="selected">
+                    <a href="#member" class="link">회원</a>
+                </li>
+                <li>
+                    <a href="#noMember" class="link">비회원</a>
+                </li>
+            </ul>
+        </div>
+        <div class="control">
+            <span class="ssl">보안접속</span>
+            <div class="keyboard">
+                <button type="button" class="btnKey korean" title="korean">한글자판</button>
+                <button type="button" class="btnKey special" title="special">특수문자</button>
+            </div>
+            <div class="view">
+                <div class="korean"><img src="https://img.echosting.cafe24.com/skin/dnd_ko_KR/common/module/login/img_korea_keyboard.png" alt="" width="254"></div>
+                <div class="special"><img src="https://img.echosting.cafe24.com/skin/dnd_ko_KR/common/module/login/img_special_keyboard.png" alt="" width="254"></div>
+            </div>
+        </div>
+        <div class="form">
+            <fieldset>
+                <legend>로그인</legend>
+                <div class="inner">
+                    <div class="write">
+                        <span title="{$login_id_type_text}">{$form.member_id}</span>
+                        {$form.member_passwd}
+                    </div>
+                    <div class="option">
+                        <span class="item">{$form.use_login_keeping}</span>
+                        <span class="item">{$form.check_save_id}</span>
+                    </div>
+                    <div class="btnLogin">
+                        <button type="button" class="button" onclick="{$action_func_login}">로그인</button>
+                        <a href="{$returnUrl}" onclick="{$action_nomember_order}" class="button theme1 {$display_nomember|display}">비회원 구매</a>
+                    </div>
+                    <div class="util">
+                        <a href="/member/id/find_id.html" class="link {$display_find_id|display}">아이디찾기</a>
+                        <a href="/member/passwd/find_passwd_info.html" class="link">비밀번호찾기</a>
+                        <a href="/member/agreement.html" class="link">회원가입</a>
+                    </div>
+                    <div class="snsLogin">
+                        <a href="#none" class="btnSns btnNaver {$display_naver|display}" onclick="{$naver_func_login}">
+                            <span class="text"><strong class="sns">네이버</strong>로 로그인</span>
+                        </a>
+                        <a href="#none" class="btnSns btnFacebook {$display_facebook|display}" onclick="{$facebook_func_login}">
+                            <span class="text"><strong class="sns">페이스북</strong>으로 로그인</span>
+                        </a>
+                        <a href="#none" class="btnSns btnGoogle {$display_google|display}" onclick="{$google_func_login}">
+                            <span class="text"><strong class="sns">구글</strong>로 로그인</span>
+                        </a>
+                        <a href="#none" class="btnSns btnKakao {$display_kakao|display}" onclick="{$kakao_func_login}">
+                            <span class="text"><strong class="sns">카카오</strong> 로그인</span>
+                        </a>
+                        <a href="#none" class="btnSns btnLine {$display_line|display}" onclick="{$line_func_login}">
+                            <span class="text"><strong class="sns">라인</strong>으로 로그인</span>
+                        </a>
+                        <a href="#none" class="btnSns btnYahoo {$display_yahoojp|display}" onclick="{$yahoo_func_login}">
+                            <span class="text"><strong class="sns">야후</strong>로 로그인</span>
+                        </a>
+                        <a href="#none" class="btnSns btnApple {$display_apple|display}" onclick="{$apple_func_login}">
+                            <span class="text"><strong class="sns">Apple</strong> 로그인</span>
+                        </a>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</div>
+<div module="MyShop_OrderHistoryNologin" id="{$order_history_nologin_id}" class="orderHistoryNoLogin">
+    <!--
+        $orderDetailUrl = /myshop/order/list.html
+    -->
+    <div class="memberTab">
+        <ul class="tab">
+            <li>
+                <a href="#member" class="link">회원</a>
+            </li>
+            <li class="selected">
+                <a href="#noMember" class="link">비회원</a>
+            </li>
+        </ul>
+    </div>
+    <div class="control">
+        <div class="keyboard">
+            <button type="button" class="btnKey korean" title="korean">한글자판</button>
+            <button type="button" class="btnKey special" title="special">특수문자</button>
+        </div>
+        <div class="view">
+            <div class="korean"><img src="https://img.echosting.cafe24.com/skin/mobile_ko_KR/member/img_keyboard.png" alt="" width="254"></div>
+            <div class="special"><img src="https://img.echosting.cafe24.com/skin/mobile_ko_KR/member/img_keyboard_special.png" alt="" width="254"></div>
+        </div>
+    </div>
+    <div class="form">
+        <fieldset>
+            <div class="inner">
+                <div class="write">
+                    {$form.order_name}
+                    {$form.order_id}
+                    {$form.order_password}
+                </div>
+                <div class="btnLogin">
+                    <button type="button" class="button" onclick="$('#historyNoLoginForm').submit();">조회</button>
+                    <a href="/member/agreement.html" class="button theme1">회원가입</a>
+                </div>
+                <p class="help">비회원인 경우 주문번호로 주문조회만 가능합니다.</p>
+            </div>
+        </fieldset>
+    </div>
+</div>
+<!-- //MOMA COMPONENT ID 50 : BS_로그인_로그인_v01 -->
+</div>
+</div>
+<div class="gridItem" data-component-id="1072" id="grid_id_1575274375807_2" style="grid-area: 13 / 1 / 22 / 5;min-width: 0;">
+    <div class="dnd_module_44c3f38250e232bf44d0475f4cfc3ee4">
+<!-- MOMA COMPONENT ID 1072 : E_공통_푸터 --> 
+<footer id="footer">
+    <div module="Layout_footer" class="company">
+        <ul class="util">
+            <li><a href="/shopinfo/company.html" class="link">About us</a></li>
+            <li><a href="/member/mall_agreement.html" class="link">Agreement</a></li>
+            <li><a href="/member/privacy.html" class="link"><strong>Privacy</strong></a></li>
+            <li class="commercial-law"><a href='/shopinfo/commercial_law.html'>특정 상거래 법에 근거한 표시</a></li><!-- 일본몰: 특정 상거래법에 의거한 표시 -->
+            <li><a href="/shopinfo/guide.html" class="link">Guide</a></li>
+        </ul>
+        <div module="Layout_LogoTop" class="footLogo">
+            <a href="/index.html" class="link">{$mall_name}</a>
+        </div>
+        <div class="info">
+            <ul>
+                <li>MANAGER: {$president_name} | CALL CENTER: <a href="tel:{$phone}">{$phone}</a></li>
+                <li>E.MAIL: <a href="mailto:{$email}">{$email}</a></li>
+                <li>ADDRESS: {$mall_zipcode} {$mall_addr1} {$mall_addr2}</li>
+                <li class="{$cpo_email|display}">PERSONAL INFORMATION MANAGER: <a href="mailto:{$cpo_email}">{$cpo_name}({$cpo_email})</a></li>               
+                <li><span class="{$company_name|display}">COMPANY: {$company_name}</span><span class="{$fax|display}"> | FAX: {$fax}</span></li>
+                <li>HOSTING: HOSTING BY 카페24(주)</li>
+                <li class="{$network_regno|display}">E-COMMERCE PERMIT: {$network_regno}</li>               
+                <li>BUSINESS REGISTRATION NO: {$company_regno}<span class="business_info">{$biz_no_link}</span><!-- 한국몰: 전자거래법상 '사업자정보조회'버튼 제공 --></li>                              
+            </ul>
+        </div>
+        <p class="copyright">Copyright &copy; {$mall_name}. All Rights Reserved.</p>
+    </div>
+</footer>
+<!-- //MOMA COMPONENT ID 1072 : E_공통_푸터 --> 
+</div>
+</div>
+        </div>
+    </div>
+<!--@js(/member/login.js)-->
+<!-- body -->
+<div module="Popup_MultiPopup">
+    <!--
+            $banner_popup_no =
+            ※ 노출시킬 팝업의 ID를 숫자로 넣어주세요.
+        -->
+    {$popup}
+</div>
+</body>
+</html>

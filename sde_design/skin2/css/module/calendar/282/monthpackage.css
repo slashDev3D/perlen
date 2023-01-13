@@ -1,0 +1,36 @@
+.xans-calendar-monthpackage {}
+.xans-calendar-monthpackage .tab { position:relative; margin:20px 0 30px; height:34px; border-bottom:1px solid #d6d6d6; }
+.xans-calendar-monthpackage .tab ul { border:1px solid #cbcdce; border-bottom-color:#292929; height:38px; border-left:0; background:#f0f2f2; *zoom:1; }
+.xans-calendar-monthpackage .tab ul:after { content:""; display:block; clear:both; }
+.xans-calendar-monthpackage .tab li { float:left; }
+.xans-calendar-monthpackage .tab li a { display:block; min-width:168px; height:38px; margin:0 -1px 0 0; padding:0 15px; border-right:1px solid #cbcdce; border-left:1px solid #cbcdce; color:#757575; line-height:38px; text-decoration:none; text-align:center; background:#f0f2f2; }
+.xans-calendar-monthpackage .tab li.selected a { position:relative; top:-1px; margin:0 0 -1px; border:1px solid #292929; color:#fff; font-weight:bold; background:#4a5164; }
+.xans-calendar-monthpackage .tab p.addType { position:absolute; top:8px; right:10px; }
+
+.xans-calendar-headmonth { position:relative; height:70px; text-align:center; }
+.xans-calendar-headmonth .date { display:inline; color:#d9bca0; font-size:30px; letter-spacing:-1px; font-family:Lucida Sans, sans-serif; }
+.xans-calendar-headmonth .date img { vertical-align:middle; }
+.xans-calendar-headmonth .btn { position:absolute; right:0; top:0px; }
+
+.xans-calendar-category { padding:0 0 20px; }
+
+.xans-calendar-listmonth th { border-top:1px solid #d9bca0; font-size:11px; color:#d9bca0; background:url("http://img.echosting.cafe24.com/skin/base_ko_KR/calendar/bg_thead.gif") right 0 no-repeat; }
+.xans-calendar-listmonth th span { display:block; padding:8px 0; }
+.xans-calendar-listmonth th.sun span { color:#e5541e; background:url("http://img.echosting.cafe24.com/skin/base_ko_KR/calendar/bg_thead.gif") 0 0 no-repeat; }
+.xans-calendar-listmonth th.sat span { color:#7cbed7; }
+.xans-calendar-listmonth td { border:1px solid #fff; background:#f7f4ec; font-size:11px; }
+.xans-calendar-listmonth td.cal_day_select { background:#f4eacf; }
+.xans-calendar-listmonth td.cal_day_select .day { color:#897130; }
+.xans-calendar-listmonth td.cal_day { background:#f7f4ec; }
+
+.xans-calendar-listmonth td div { min-height:90px; padding:8px 6px; border-top:1px solid #e2ddd0; border-left:1px solid #e2ddd0; color:#8f8f8f; }
+.xans-calendar-listmonth td div.today { background:#d1e7b9; }
+.xans-calendar-listmonth td div.today .day { font-weight:bold; text-decoration:underline; color:#75a039; }
+
+.xans-calendar-listmonth td p { padding:0 0 25px; color:#8f8f8f; }
+.xans-calendar-listmonth td p span { padding:0 4px 0 0; }
+.xans-calendar-listmonth td p a,
+.xans-calendar-listmonth td p a:hover { display:inline-block; .display:inline; zoom:1; padding:2px 0 2px 21px; color:#4b97b4; background:url("http://img.echosting.cafe24.com/skin/base_ko_KR/calendar/ico_count.gif") 0 0 no-repeat; }
+.xans-calendar-listmonth td li { padding:0 0 0 7px; background:url("http://img.echosting.cafe24.com/skin/base_ko_KR/calendar/ico_list.gif") 0 center no-repeat; }
+.xans-calendar-listmonth td li a,
+.xans-calendar-listmonth td li a:hover { line-height:18px; color:#8f8f91; }

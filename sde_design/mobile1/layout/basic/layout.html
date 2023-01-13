@@ -1,0 +1,139 @@
+<!doctype html>
+<html xmlns="//www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <title></title>
+    <!--@css(/layout/basic/css/common.css)-->
+    <!--@css(/layout/basic/css/ec-base-ui.css)-->
+    <!--@css(/layout/basic/css/ec-base-paginate.css)-->
+    <!--@css(/layout/basic/css/ec-base-help.css)-->
+    <!--@css(/layout/basic/css/ec-base-product.css)-->
+    <!--@css(/layout/basic/css/ec-base-button.css)-->
+    <!--@css(/layout/basic/css/ec-base-box.css)-->
+    <!--@css(/layout/basic/css/ec-base-layer.css)-->
+    <!--@css(/layout/basic/css/ec-base-tab.css)-->
+    <!--@css(/layout/basic/css/ec-base-tooltip.css)-->
+    <!--@css(/layout/basic/css/ec-base-table.css)-->
+    <!--@css(/layout/basic/css/ec-base-fold.css)-->
+    <!--@css(/layout/basic/css/ec-base-prdInfo.css)-->
+    <!--@css(/layout/basic/css/layout.css)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    
+    <!--easyweb css-->
+    <!--@css(/layout/basic/css/font.css)-->
+    <!--@css(/layout/basic/css/public.css)-->
+    <!-- 스마트디자인에서는 JQuery 1.4.4 버전이 내장되어있습니다. 추가로 호출하면 충돌이 생길 수 있습니다. -->
+    <!--@js(/layout/basic/js/common.js)-->
+	<!--@js(/layout/basic/js/mcommon.js)-->
+	<!--@js(/layout/basic/js/public.js)-->
+    
+</head>
+<style>
+    	#container{padding-top:160px;}
+    @media (max-width:480px){
+        #container{padding-top:140px;}
+    }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    #header{position:fixed;top:0;z-index:999;width:100%;left:0;}
+    .header__wrap{width:100%;padding:12px 20px;}
+    .white .header__wrap{border-bottom:1px solid rgb(0,0,0,0)}
+    .black .header__wrap{border-bottom:1px solid rgb(255,255,255,0)}
+    .header__container{display:flex;justify-content:space-between;position:relative;}
+    .left_area{display:flex;flex-direction:column;justify-content:center;}
+    .left_area_wrap{width:24px;display:flex;flex-direction:column;justify-content:space-between;}
+    .left_area span{width:100%; display:block;height:2px;margin:2px 0;}
+    .black .left_area span{background-color:#000000;}
+    .white .left_area span{background-color:#ffffff;}
+    
+    .center_area{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);margin-top:12px;}
+    .header__logo{display:none;}
+    .black .header__logo_black{display:block;}
+    .white .header__logo_black{display:none;}
+    .black .header__logo_white{display:none;}
+    .white .header__logo_white{display:block;}
+	.star_wrap{margin:auto;width:100%;max-width:100px;display:flex;justify-content:center;}
+    .star_wrap svg{width:20px;height:20px;}
+    .black .star_wrap svg{fill:#000000;}
+    .white .star_wrap svg{fill:#ffffff;}
+    
+    .right_area{display:flex;flex-direction:column;justify-content:center;}
+    @media (max-width:480px){
+    .center_area .star_wrap svg{width:16px;height:16px;}
+    #header a{margin:0;padding:4px;}
+    }
+</style>
+<body id="layout">
+<div id="wrap">
+<!--@import(/layout/basic/sidebar.html)-->
+<hr class="layout">
+<div id="container">
+	<header id="header" class="header">
+        <div class="header__wrap">
+            <div class="header__container">
+				<div class="top_cate fold left_area">
+                    <div class="left_area_wrap">
+                		<span></span>
+                		<span></span>
+                		<span></span>
+					</div>
+                </div>
+            	<div class="logo_wrap">
+   					<div class="star_wrap">
+                		<svg id="headStar1" class="head_star logo_small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 814.02 811.27"><defs></defs><g data-name="layer2"><g data-name="layer1-2"><path class="cls-1" d="M405.54,0c3.21,71.31,22.54,137.73,59.47,198.74q55.77,92.14,149.06,146c61.73,35.81,128.76,53.29,200,56.83-111,5.25-207.21,44.37-285.92,122.91S409.6,699.18,405.43,811.27c-4.11-2.82-3.26-6-3.33-8.68-.84-35.9-7.2-70.86-17.57-105.15a409.07,409.07,0,0,0-77.79-144.2A411.21,411.21,0,0,0,166.88,443.86c-43.64-20.94-89.51-34.19-137.83-38.77-8.9-.84-17.83-1.57-29-2.2,5.77-3.26,9.93-3.47,14.05-3.69,57.44-3.1,111.65-18.3,162.61-44.66Q289.4,296.22,351.19,185.07C379.66,133.92,395.71,79,401.46,20.93c.68-6.87.79-13.8,1.16-20.7Z" transform="translate(-0.05)"/></g></g></svg>
+                		<svg id="headStar2" class="head_star logo_small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 814.02 811.27"><defs></defs><g data-name="layer2"><g data-name="layer1-2"><path class="cls-1" d="M405.54,0c3.21,71.31,22.54,137.73,59.47,198.74q55.77,92.14,149.06,146c61.73,35.81,128.76,53.29,200,56.83-111,5.25-207.21,44.37-285.92,122.91S409.6,699.18,405.43,811.27c-4.11-2.82-3.26-6-3.33-8.68-.84-35.9-7.2-70.86-17.57-105.15a409.07,409.07,0,0,0-77.79-144.2A411.21,411.21,0,0,0,166.88,443.86c-43.64-20.94-89.51-34.19-137.83-38.77-8.9-.84-17.83-1.57-29-2.2,5.77-3.26,9.93-3.47,14.05-3.69,57.44-3.1,111.65-18.3,162.61-44.66Q289.4,296.22,351.19,185.07C379.66,133.92,395.71,79,401.46,20.93c.68-6.87.79-13.8,1.16-20.7Z" transform="translate(-0.05)"/></g></g></svg>
+                		<svg id="headStar3" class="head_star logo_small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 814.02 811.27"><defs></defs><g data-name="layer2"><g data-name="layer1-2"><path class="cls-1" d="M405.54,0c3.21,71.31,22.54,137.73,59.47,198.74q55.77,92.14,149.06,146c61.73,35.81,128.76,53.29,200,56.83-111,5.25-207.21,44.37-285.92,122.91S409.6,699.18,405.43,811.27c-4.11-2.82-3.26-6-3.33-8.68-.84-35.9-7.2-70.86-17.57-105.15a409.07,409.07,0,0,0-77.79-144.2A411.21,411.21,0,0,0,166.88,443.86c-43.64-20.94-89.51-34.19-137.83-38.77-8.9-.84-17.83-1.57-29-2.2,5.77-3.26,9.93-3.47,14.05-3.69,57.44-3.1,111.65-18.3,162.61-44.66Q289.4,296.22,351.19,185.07C379.66,133.92,395.71,79,401.46,20.93c.68-6.87.79-13.8,1.16-20.7Z" transform="translate(-0.05)"/></g></g></svg>
+                		<svg id="headStar4" class="head_star logo_small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 814.02 811.27"><defs></defs><g data-name="layer2"><g data-name="layer1-2"><path class="cls-1" d="M405.54,0c3.21,71.31,22.54,137.73,59.47,198.74q55.77,92.14,149.06,146c61.73,35.81,128.76,53.29,200,56.83-111,5.25-207.21,44.37-285.92,122.91S409.6,699.18,405.43,811.27c-4.11-2.82-3.26-6-3.33-8.68-.84-35.9-7.2-70.86-17.57-105.15a409.07,409.07,0,0,0-77.79-144.2A411.21,411.21,0,0,0,166.88,443.86c-43.64-20.94-89.51-34.19-137.83-38.77-8.9-.84-17.83-1.57-29-2.2,5.77-3.26,9.93-3.47,14.05-3.69,57.44-3.1,111.65-18.3,162.61-44.66Q289.4,296.22,351.19,185.07C379.66,133.92,395.71,79,401.46,20.93c.68-6.87.79-13.8,1.16-20.7Z" transform="translate(-0.05)"/></g></g></svg>
+            		</div>
+					<div class="top_logo header__logo header__logo_black"><a href="/"><img src="/web/upload/image/header_logo_black.png"></a></div>
+					<div class="top_logo header__logo header__logo_white"><a href="/"><img src="/web/upload/image/header_logo.png"></a></div>
+            	</div><!-- //center area-->
+				<div class="right_area">
+					<!--<div module="Layout_orderBasketcount" class="top_cart"><a href="/order/basket.html">BAG - <span class="basker_count">{$basket_count}</span></a></div>-->
+                    <div module="Layout_orderBasketcount" class="top_cart"><a href="/order/basket.html">
+                        <svg class="bag_icon" data-name="y1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 323.4 383.22"><g data-name="y2"><g data-name="y1-2"><path d="M171.41,0c6.89,1.52,14,2.38,20.64,4.66q57.67,19.86,70,79.82c.17.85.37,1.71.52,2.56s.25,1.67.41,2.79h45.34a14.62,14.62,0,0,1,15.05,14.75q.06,72,0,144.08a15,15,0,0,1-29.89-.19V120h-30v44.54a15,15,0,1,1-29.89.82c0-.26,0-.51,0-.77-.05-13.48,0-27,0-40.42V120H89.81v44.29c0,8.85-6.32,15.36-14.82,15.4-8.73,0-15.08-6.45-15.09-15.5V120.11H30.19V353.32H188.34c7.85,0,14.26,5.43,15.18,12.72a15,15,0,0,1-11.16,16.75,17.35,17.35,0,0,1-4.43.42H15.78C6.12,383.23,0,377.06,0,367.31V105.72C0,96,6.13,89.85,15.82,89.84H60.44c2.47-18.78,9.13-35.63,20.73-50.31C98.65,17.39,121.39,4.29,149.48.72A17.35,17.35,0,0,0,151.94,0ZM232,89.65c-3.06-26.8-29.48-60.74-72.69-59.58-20.09.54-37.16,8.67-50.76,23.53A68.2,68.2,0,0,0,91.06,89.65Z"></path><path class="cls-1" d="M293.41,323.38h15.12a15,15,0,0,1-.11,29.9h-15v14.29c0,9.12-6.26,15.64-14.92,15.65s-15-6.5-15-15.58V353.28H249.28c-9.17,0-15.7-6.2-15.73-14.84,0-8.88,6.46-15.06,15.86-15.08h14.08V308.5c.06-8.71,6.51-15.12,15.1-15.08a14.72,14.72,0,0,1,14.81,14.63v.37C293.44,313.28,293.41,318.12,293.41,323.38Z"></path></g></g></svg>
+                        <span class="basker_count">{$basket_count}</span>
+                    </a></div>
+					<!--<div class="search"><button type="button"></button></div>-->
+				</div><!-- //right_area -->
+		<!--at mark and import(/layout/basic/search.html)-->
+			</div><!-- //header__container-->
+		</div><!-- //header__wrap-->
+	</header><!-- //header -->
+	<hr class="layout">
+	<div id="contents">
+		<!--@contents-->
+	</div><!-- //contents -->
+	<hr class="layout">
+	<!--@import(/layout/basic/footer.html)-->
+</div><!-- //container -->
+</div><!-- //wrap -->
+<!--@css(/layout/basic/css/customizing.css)-->
+    
+    <script>
+    setTimeout(()=>{
+	    const header = document.getElementById("header")
+	    const footer = document.getElementById("footer")
+	    header.classList.remove("white")
+	    header.classList.add("black")
+	    footer.classList.remove("black")
+    	footer.classList.add("white")
+	})
+</script>
+</body>
+</html>

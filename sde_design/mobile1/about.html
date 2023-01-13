@@ -1,0 +1,179 @@
+    <!--@layout(/layout/basic/layout.html)-->
+    <style>
+        body{background-color: #000000;}
+        #sect1,#sect2,#sect3{text-align: center;color: #ffffff;}
+        #wrap{width: 100%;max-width:unset;margin-top:0;}
+        #contents{background-color:#000000;}
+        #container{background-color:#000000;}
+        
+        #sect1{padding-top:280px;}
+        .s1__head{max-width: 970px;width: 100%;margin: auto;padding-bottom: 140px;}
+        .s1__head_wrap{padding: 0 40px;}
+        .s1__textBig{font-size: 150px;font-weight:300;letter-spacing: -0.05em;line-height: 0.85;}
+        .s1__textSmall{font-size: 16px;margin-top: 50px;line-height: 1.5;word-break:keep-all;}
+        .s1__bg{width: 100%;max-width: 1610px;margin: auto;}
+        .s1__bg video{width: 100%;display: block;margin: auto;}
+    
+        .s2__container{margin: auto;max-width: 1040px;width: 100%;padding:0 40px;}
+        .s2about__figure{margin-top: 480px;word-break: keep-all;}
+        .s2about__figure_imgBox{border-radius: 1000px 1000px 0 0;overflow: hidden;max-width: 650px;margin: auto;position: relative;width: 100%;}
+        .s2about__figure_imgBox img{opacity: 0;width: 100%;}
+        .s2about__figure_imgBox img.abs{position: absolute;width: 100%;top: 0;left: 0;opacity: 1;}
+        .s2about__figure_textBox{margin-top: -110px;position: relative;}
+        .s2about__figure_text1{font-size: 200px;line-height: 1;letter-spacing: -0.05em;transition-delay:0.3s}
+        .s2about__figure_text2{font-size: 18px;line-height: 1.5;letter-spacing: -0.04em;margin-top: 70px;transition-delay:0.5s}
+        .s2about__figure_text3{font-size: 16px;opacity: 0.4;line-height: 1.5;margin-top: 30px;transition-delay:0.7s}
+        
+        .s2about__figure_text1,.s2about__figure_text2,.s2about__figure_text3{opacity:0;transform:translate(0,10%);transition-duration:0.6s;}
+		.on-view .s2about__figure_text1,.on-view .s2about__figure_text2{opacity:1;transform:translate(0,0%);}
+        .on-view .s2about__figure_text3{opacity:0.4;transform:translate(0,0%);}
+        #sect2{margin-bottom:400px;}
+        #sect3{margin-top: 400px;display:none;}
+        .s3__starWrap svg{fill:#ffffff;}
+        .s3__head{padding: 0 40px;}
+        .s3__head_text{font-size: 18px;margin-top: 40px;word-break: keep-all;line-height:1.5;}
+        .s3__belt{overflow: hidden;margin-top: 120px;margin-bottom:180px;}
+        .s3__belt_wrap{display: -webkit-box;}
+        /* .s3__belt_wrap p{font-size: 80px;margin: 0 120px;} */
+        .s3__belt_wrap img{width: 1440px;display: block;padding: 0 120px;}
+        @media (max-width:1024px){
+        #sect1{padding-top:240px;}
+            .s1__textBig{font-size: 80px;}
+            .s2about__figure{margin-top: 320px;}
+            .s2about__figure_text1{font-size: 120px;}
+            .s2about__figure_textBox{margin-top: -67px;}
+            .s2about__figure_text2{margin-top: 50px;}
+            .s2about__figure_text3{margin-top: 40px;}
+	        #sect2{margin-bottom:280px;}
+    
+        }
+        @media (max-width:767px){
+        #sect1{padding-top:220px;}
+            .s1__textBig{font-size: 60px;}
+            .s2about__figure{margin-top: 280px;}
+            .s2about__figure_textBox{margin-top: -46px;}
+            .s2about__figure_text1{font-size: 80px;}
+            .s2about__figure_text2{margin-top: 40px;}
+            .s2about__figure_text3{margin-top: 24px;}
+            .s3__head_text{font-size: 16px;margin-top: 24px;}
+            .s3__belt_wrap img{width: 720px;padding: 0 80px;}
+	        #sect2{margin-bottom:240px;}
+        }
+        @media (max-width:480px){
+        #sect1{padding-top:140px;}
+            .s2__container{padding: 0 20px;}
+            .s1__textBig{font-size: 48px;}
+            .s1__head_wrap{padding: 0 20px;}
+            .s2about__figure{margin-top: 240px;}
+            .s2about__figure_textBox{margin-top: -33px;}
+            .s2about__figure_text1{font-size: 60px;}
+            .s2about__figure_text2{font-size: 14px;margin-top: 20px;}
+            .s2about__figure_text3{font-size: 14px;margin-top: 20px;}
+	        .s3__belt{margin-top: 80px;margin-bottom:0;}
+            .s3__head{padding: 0 20px;}
+            .s3__head_text{font-size: 14px;margin-top: 20px;}
+	        #sect2{margin-bottom:200px;}
+        }
+    </style>
+    
+    <div id="sect1">
+        <div class="s1__head">
+            <div class="s1__head_wrap">
+                <div class="s1__textBig font1"><p>About</p></div>
+                <div class="s1__textSmall font3"><p>진주알같이 반짝반짝 빛나는 그 이름처럼, 펠른은 공간을 방문하는 한 분 한 분의 취향을 헤아리고 <br class="over767"> 집중하는 시간을 통해 펠른에서의 모든 순간들이 빛날 수 있는 경험을 제공합니다.</p></div>
+            </div>
+        </div>
+        <div class="s1__bg">
+            <video loop autoplay muted src="https://player.vimeo.com/progressive_redirect/playback/704427115/rendition/1080p?loc=external&signature=ca03691f86551261852c694a7b7547ce9480fd4e2db1308209c23653107c7649"></video>
+        </div>
+    </div>
+    <div id="sect2">
+        <div class="s2__container">
+            <div class="s2__wrap">
+                <div class="s2about__figure s2about__figure1 scroll-detect">
+                    <div class="s2about__figure_imgBox">
+                        <img class="abs" src="/web/upload/image/about_s2_fig1.png" alt="">
+                        <img src="/web/upload/image/about_s2_fig1_dummy.png" alt="">
+                    </div>
+                    <div class="s2about__figure_textBox">
+                        <p class="s2about__figure_text1 font1">Our Coffee</p>
+                        <p class="s2about__figure_text2 font3">펠른은 마스터와의 대화를 통해 고객의 취향을 파악하고 그에 맞는 커피를 제공합니다. <br class="over767"><br class="over1024">커피의 원두, 맛, 향, 제조법에 대한 소개와 더불어 커피를 즐기는 방법까지 <br class="over767"> 펠른을 방문하는 모두에게 최적의 커피를 소개, 경험할 수 있도록 합니다.</p>
+                        <p class="s2about__figure_text3 font2">Our team, Perlen masters will carefully read your taste and finally find you the best coffee through the time and conversation at Perlen. <br class="over1024">If you are looking for the best way of enjoying your coffee?<br class="over1024">You should be here at “Perlen”</p>
+                    </div>
+                </div>
+                <div class="s2about__figure s2about__figure2 scroll-detect">
+                    <div class="s2about__figure_imgBox">
+                        <img class="abs" src="/web/upload/image/about_s2_fig2.png" alt="">
+                        <img src="/web/upload/image/about_s2_fig1_dummy.png" alt="">
+                    </div>
+                    <div class="s2about__figure_textBox">
+                        <p class="s2about__figure_text1 font1">Our Dish</p>
+                        <p class="s2about__figure_text2 font3">펠른에서는 각 커피의 맛과 향을 극대화 할 수 있는 최적의 디쉬가 페어링 됩니다. <br class="over767"><br class="over1024">개발 단계부터 바리스타와 쉐프가 함께 고민하며 재료 선택부터 고객에 제공되는 그 순간까지 가장 어울리는 모양과 맛을 찾고자 합니다.</p>
+                        <p class="s2about__figure_text3 font2">What goes the best with our coffee? <br class="over1024">The team Perlen always think of the best pair for each coffee menu. <br class="over1024">From the very beginning of our R&amp;D stage, our barista and chef will work together <br class="over1024">to study its ingredients, shapes and flavors for the finest “Perlen” match.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sect3">
+        <div class="s3__head">
+            <div class="s3__starWrap">
+                <svg class="head_star logo_small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 814.02 811.27"><defs></defs><g data-name="layer2"><g data-name="layer1-2"><path class="cls-1" d="M405.54,0c3.21,71.31,22.54,137.73,59.47,198.74q55.77,92.14,149.06,146c61.73,35.81,128.76,53.29,200,56.83-111,5.25-207.21,44.37-285.92,122.91S409.6,699.18,405.43,811.27c-4.11-2.82-3.26-6-3.33-8.68-.84-35.9-7.2-70.86-17.57-105.15a409.07,409.07,0,0,0-77.79-144.2A411.21,411.21,0,0,0,166.88,443.86c-43.64-20.94-89.51-34.19-137.83-38.77-8.9-.84-17.83-1.57-29-2.2,5.77-3.26,9.93-3.47,14.05-3.69,57.44-3.1,111.65-18.3,162.61-44.66Q289.4,296.22,351.19,185.07C379.66,133.92,395.71,79,401.46,20.93c.68-6.87.79-13.8,1.16-20.7Z" transform="translate(-0.05)"></path></g></g></svg>
+                <svg class="head_star logo_small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 814.02 811.27"><defs></defs><g data-name="layer2"><g data-name="layer1-2"><path class="cls-1" d="M405.54,0c3.21,71.31,22.54,137.73,59.47,198.74q55.77,92.14,149.06,146c61.73,35.81,128.76,53.29,200,56.83-111,5.25-207.21,44.37-285.92,122.91S409.6,699.18,405.43,811.27c-4.11-2.82-3.26-6-3.33-8.68-.84-35.9-7.2-70.86-17.57-105.15a409.07,409.07,0,0,0-77.79-144.2A411.21,411.21,0,0,0,166.88,443.86c-43.64-20.94-89.51-34.19-137.83-38.77-8.9-.84-17.83-1.57-29-2.2,5.77-3.26,9.93-3.47,14.05-3.69,57.44-3.1,111.65-18.3,162.61-44.66Q289.4,296.22,351.19,185.07C379.66,133.92,395.71,79,401.46,20.93c.68-6.87.79-13.8,1.16-20.7Z" transform="translate(-0.05)"></path></g></g></svg>
+                <svg class="head_star logo_small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 814.02 811.27"><defs></defs><g data-name="layer2"><g data-name="layer1-2"><path class="cls-1" d="M405.54,0c3.21,71.31,22.54,137.73,59.47,198.74q55.77,92.14,149.06,146c61.73,35.81,128.76,53.29,200,56.83-111,5.25-207.21,44.37-285.92,122.91S409.6,699.18,405.43,811.27c-4.11-2.82-3.26-6-3.33-8.68-.84-35.9-7.2-70.86-17.57-105.15a409.07,409.07,0,0,0-77.79-144.2A411.21,411.21,0,0,0,166.88,443.86c-43.64-20.94-89.51-34.19-137.83-38.77-8.9-.84-17.83-1.57-29-2.2,5.77-3.26,9.93-3.47,14.05-3.69,57.44-3.1,111.65-18.3,162.61-44.66Q289.4,296.22,351.19,185.07C379.66,133.92,395.71,79,401.46,20.93c.68-6.87.79-13.8,1.16-20.7Z" transform="translate(-0.05)"></path></g></g></svg>
+                <svg class="head_star logo_small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 814.02 811.27"><defs></defs><g data-name="layer2"><g data-name="layer1-2"><path class="cls-1" d="M405.54,0c3.21,71.31,22.54,137.73,59.47,198.74q55.77,92.14,149.06,146c61.73,35.81,128.76,53.29,200,56.83-111,5.25-207.21,44.37-285.92,122.91S409.6,699.18,405.43,811.27c-4.11-2.82-3.26-6-3.33-8.68-.84-35.9-7.2-70.86-17.57-105.15a409.07,409.07,0,0,0-77.79-144.2A411.21,411.21,0,0,0,166.88,443.86c-43.64-20.94-89.51-34.19-137.83-38.77-8.9-.84-17.83-1.57-29-2.2,5.77-3.26,9.93-3.47,14.05-3.69,57.44-3.1,111.65-18.3,162.61-44.66Q289.4,296.22,351.19,185.07C379.66,133.92,395.71,79,401.46,20.93c.68-6.87.79-13.8,1.16-20.7Z" transform="translate(-0.05)"></path></g></g></svg>
+            </div>
+            <p class="s3__head_text font3">펠른에서의 모든 순간들이 빛날 수 있는 <br class="over480">경험을 제공합니다.</p>
+        </div>
+        <div class="s3__belt">
+            <div class="s3__belt_wrap font1">
+                <!-- <p>Perlen, a new way of meeting your coffee</p>
+                <p>Perlen, a new way of meeting your coffee</p>
+                <p>Perlen, a new way of meeting your coffee</p> -->
+                <img src="/web/upload/image/about_flow text.svg" alt="">
+                <img src="/web/upload/image/about_flow text.svg" alt="">
+                <img src="/web/upload/image/about_flow text.svg" alt="">
+                <img src="/web/upload/image/about_flow text.svg" alt="">
+                <img src="/web/upload/image/about_flow text.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+    setTimeout(()=>{
+            
+        const aboutBelt = $(".s3__belt_wrap img")
+        const s2Fig1 = $(".s2about__figure1")
+        const s2Fig2 = $(".s2about__figure2")
+        const s2FigImg1 = $(".s2about__figure1 .s2about__figure_imgBox img")
+        const s2FigImg2 = $(".s2about__figure2 .s2about__figure_imgBox img")
+        gsap.fromTo(aboutBelt,20,{x:"0%"},{x:"-100%",ease:Power0.easeNone}).repeat(-1);
+        gsap.to(s2FigImg1,{
+            y:"-20%",
+            scrollTrigger:{
+                trigger:s2Fig1,
+                start:"10% 0%",
+                end:"100% 0%",
+                scrub:0.3
+            }
+        })
+        gsap.to(s2FigImg2,{
+            y:"-20%",
+            scrollTrigger:{
+                trigger:s2Fig2,
+                start:"10% 0%",
+                end:"100% 0%",
+                scrub:0.3
+            }
+        })
+        
+    })
+    setTimeout(()=>{
+	    const header = document.getElementById("header")
+	    const footer = document.getElementById("footer")
+	    header.classList.remove("black")
+	    header.classList.add("white")
+	    footer.classList.remove("white")
+    	footer.classList.add("black")
+	},50)
+    </script>
+    <!--@js(/layout/basic/js/about.js)-->

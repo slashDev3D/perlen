@@ -1,0 +1,5 @@
+.hoverd {
+  -webkit-clip-path: path("M 0 200 L 0,75 A 5,5 0,0,1 150,75 L 200 200 z");
+          clip-path: path("M 0 200 L 0,75 A 5,5 0,0,1 150,75 L 200 200 z");
+}
+/*# sourceMappingURL=product.css.map */

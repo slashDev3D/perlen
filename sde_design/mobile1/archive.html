@@ -1,0 +1,86 @@
+<!--@layout(/layout/basic/layout.html)-->
+<style>
+	.body__wrap{background-color:#000000;}
+    body{background-color:#000000;}
+    #wrap{width:100%;max-width:unset;margin-top:unset;}
+    #container{background-color:#000000;}
+    #contents{background-color:#000000;position:static;}
+    #archive_sect{width:100%;padding-top:120px;color:#ffffff;text-align:center;}
+    #archive_sect h2{font-size:150px;font-weight:300;line-height:1;}
+    #archive_sect p{color:#ffffff;}
+    .archive_container{margin-top:160px;}
+    .archive_imageBox img{width:100%;}
+    .archive_bigText{font-size:40px;line-height:1;margin-top:24px;}
+    .archive_smallText{font-size:14px;line-height:1.5;margin-top:40px;opacity:0.4;}
+    .archive_wrap{display:flex;justify-content:flex-start;flex-wrap:wrap;padding:0 40px;margin-bottom:250px;}
+    .archive_list{width:calc(100%/3 - 14px);margin:0 7px 0px;}
+    .archive_list:nth-child(1) .archive_imageBox{}
+    @media (max-width:1024px){
+        #archive_sect{padding-top:60px;}
+    	#archive_sect h2{font-size:80px;}
+        .archive_wrap{margin-bottom:200px;}
+	    .archive_bigText{font-size:32px;}
+	}
+    @media (max-width:767px){
+        #archive_sect{padding-top:20px;}
+    	#archive_sect h2{font-size:60px;}
+	    .archive_container{margin-top:120px;}
+        .archive_wrap{padding:0 30px;margin-bottom:120px;}
+	    .archive_list{width:calc(100%/2 - 12px);margin:0 6px 40px;}
+	    .archive_bigText{font-size:18px;margin-top:14px}
+        .archive_smallText{font-size:14px;margin-top:24px;}
+	}
+    @media (max-width:480px){
+        #archive_sect{padding-top:0px;}
+    	#archive_sect h2{font-size:50px;}
+	    .archive_container{margin-top:80px;}
+    	.archive_list{width:calc(100%);margin:0 0px 60px;}
+        .archive_wrap{padding:0 40px;margin-bottom:100px;}
+	    .archive_bigText{font-size:22px;}
+        .archive_smallText{font-size:14px;margin-top:8px;}
+    }
+</style>
+<div id="archive_sect">
+    <h2 class="font1">Archive</h2>
+    <div class="archive_container">
+        <ul class="archive_wrap">
+            <li class="archive_list">
+                <a href="/archive_colorfulkorea.html">
+                <div class="archive_imageBox"><img src="/web/upload/image/main_s5_fig1.png" alt=""></div>
+                <div class="archive_textBox">
+                    <p class="archive_smallText font3">SEASON 3</p>
+                    <p class="archive_bigText font1">Colorful Korea</p>
+                </div>
+                </a>
+            </li>
+            <li class="archive_list">
+                <a href="/archive_coffeebelt.html">
+                <div class="archive_imageBox"><img src="/web/upload/image/main_s5_fig2.png" alt=""></div>
+                <div class="archive_textBox">
+                    <p class="archive_smallText font3">SEASON 2</p>
+                    <p class="archive_bigText font1">A world tour<br class="over480"> through a coffee belt</p>
+                </div>
+                </a>
+            </li>
+            <li class="archive_list">
+                <a href="/archive_emotions.html">
+                <div class="archive_imageBox"><img src="/web/upload/image/main_s5_fig4.png" alt=""></div>
+                <div class="archive_textBox">
+                    <p class="archive_smallText font3">SEASON 1</p>
+                    <p class="archive_bigText font1">Your emotions at Perlen</p>
+                </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<script>
+    setTimeout(()=>{
+	    const header = document.getElementById("header")
+	    const footer = document.getElementById("footer")
+	    header.classList.remove("black")
+	    header.classList.add("white")
+	    footer.classList.remove("white")
+    	footer.classList.add("black")
+	},50)
+</script>

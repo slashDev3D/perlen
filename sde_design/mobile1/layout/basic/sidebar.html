@@ -1,0 +1,62 @@
+<!--@css(/layout/basic/css/slideMenu.css)-->
+<!--@js(/layout/basic/js/slide_menu.js)-->
+<style>
+.custom-all-list{padding: 7px 94px 7px 10px;display:block;}
+</style>
+<aside id="aside" module="layout_slidePackage">
+<div class="cboth pdt50"></div>
+
+	<div class="cboth slide_menu slide_list"><a href="/about.html">ABOUT US</a></div><!-- 슬라이드 ABOUT 수정하는곳 -->
+    <div class="slide_list"><a href="/archive.html"><p>ARCHIVE</p></a></div>
+	<div id="slideCateList" class="categoryCont">
+        <h2 class="selected">SHOP<button type="button" class="icoCategory">펼침</button></h2>
+        <ul module="layout_category" class="categoryList slide_list">
+            <li class="noChild">
+            	<a href="/product/list.html" class="custom-all-list">ALL</a>
+            </li>
+            <li id="cate{$cate_no}">
+                <a href="#none" class="cate" cate="{$param}">{$name|cut 25}</a>
+                <a href="{$link_product}" class="view"><span>ALL VIEW</span></a>
+            </li>
+            <li id="cate{$cate_no}">
+                <a href="#none" class="cate" cate="{$param}">{$name|cut 25}</a>
+                <a href="{$link_product}" class="view"><span>ALL VIEW</span></a>
+            </li>
+        </ul>
+    </div>
+	<!--<div class="cboth slide_menu slide_list"><a href="/board/event/8/?board_no=8&category_no=1">EVENT</a></div>--><!-- 슬라이드 EVENT 수정하는곳 -->
+	<!--<div class="cboth slide_menu slide_list"><a href="/board/index.html">CS CENTER</a></div>--><!-- 슬라이드 CS CENTER 수정하는곳 -->
+
+	<ul class="cboth slide_info slide_list">
+		<li module="Layout_stateLogon"><a href="{$action_logout}">LOGOUT</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/member/modify.html">MODIFY</a></li>
+		<li module="Layout_stateLogoff"><a href="/member/login.html">LOGIN</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="/member/agreement.html">SIGN UP</a></li>
+		<li><a href="/myshop/index.html">MYPAGE</a></li>
+		<li module="Layout_orderBasketcount"><a href="/order/basket.html">BAG - <span class="basker_count">({$basket_count})</span></a></li>
+		<li><a href="/myshop/order/list.html">ORDER</a></li>
+	</ul><!-- //slide_info -->
+
+<!-- 슬라이드 SNS 수정하는곳 -->
+	<!--<ul class="cboth slide_info">
+		<li><a href="https://www.instagram.com/" target="_blank"># INSTAGRAM</a></li>
+		<li><a href="https://www.facebook.com/" target="_blank"># FACEBOOK</a></li>
+	</ul>-->
+<!-- //slide_info -->
+
+	<div class="multishop" module="Layout_multishopList" id="slideMultishopList">
+		<ul module="multishop_listitem">
+			<li class="{$selected_class}">
+				<a href="//{$shop_domain}/">
+					<img src="//img.cafe24.com/img/common/global/{$language}_53x36.png" width="27" height="18" alt=""><span class="name"> {$shop_name}</span>
+				</a>
+			</li>
+			<li class="{$selected_class}">
+				<a href="//{$shop_domain}/">
+					<img src="//img.cafe24.com/img/common/global/{$language}_53x36.png" width="27" height="18" alt=""><span class="name"> {$shop_name}</span>
+				</a>
+			</li>
+		</ul>
+	</div><!-- //multishop -->
+
+    <a href="#none" class="btnClose"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_close.png" width="13" alt="닫기"></a>
+	<div class="cboth pdt50"></div>
+</aside>

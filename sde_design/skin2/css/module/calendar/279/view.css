@@ -1,0 +1,13 @@
+#popup { width:600px; height:500px; }
+.header h1 { height:45px; padding:0 0 0 20px; color:#fff; font-size:14px; line-height:45px; background:#495164; }
+.content { padding:20px; }
+
+.xans-calendar-view table { border:1px solid #d7d5d5; color:#353535; font-size:12px; line-height:140%;}
+.xans-calendar-view table th { padding:12px 0 10px; border-right:1px solid #e3e3e3; background:#fbfafa; font-weight:normal; }
+.xans-calendar-view table td { padding:6px 3px 4px; border-top:1px solid #e3e3e3; border-right:1px solid #e3e3e3; text-align:center; vertical-align:middle; }
+.xans-calendar-view table td.left { text-align:left; padding-left:10px; }
+.xans-calendar-view table th:last-child,
+.xans-calendar-view table td:last-child { border-right:0; }
+
+.confirm_yes { margin:0 auto; width:18px; height:16px; overflow:hidden; background:url("http://img.echosting.cafe24.com/skin/base_ko_KR/calendar/ico_confirm_yes.gif") 0 0 no-repeat; }
+.confirm_no { margin:0 auto; width:18px; height:16px; overflow:hidden; background:url("http://img.echosting.cafe24.com/skin/base_ko_KR/calendar/ico_confirm_no.gif") 0 0 no-repeat; }
